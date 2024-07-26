@@ -1,0 +1,139 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %} {% endblock %} </title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Bellxbrave Empire, Brave, Brave collection, Real Estate, Hair, Clothes" name="keywords">
+        <meta content="BellXBrave Empire is a multi-diverse company in human need provisional businesses" name="description">
+
+        <!-- Favicons -->
+        <link href="{% static 'bravempire/img/favicon.ico' %}" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300|Nunito:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'bravempire/vendor/font-awesome/css/font-awesome.min.css' %}">
+
+
+        <!-- Bootstrap CSS File -->
+        <link href="{% static 'bravempire/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+        <!-- Vendor CSS Files -->
+        <link href="{% static 'bravempire/vendor/ionicons/css/ionicons.min.css' %}" rel="stylesheet">
+        <link href="{% static 'bravempire/vendor/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+        <link href="{% static 'bravempire/vendor/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
+
+        <!-- Main Stylesheet -->
+        <link href="{% static 'bravempire/css/style.css' %}" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Header Section Start -->
+        <header class="header">
+            <div class="container-fluid">
+                <div class="logo pull-left">
+                    <h1><a href="{% url 'index' %}">BELLXBRAVE</a></h1>
+                    <!-- <a href="#"><img src="{% static 'bravempire/img/logo.png" alt="" title="" /></a>-->
+                </div>
+
+                <nav id="nav-menu-container">
+                    <ul class="nav-menu">
+                        <li class=""><a href="{% url 'index' %}">Home</a></li>
+                        <li><a href="#">BellaTeg Hairmpire</a></li>
+                        <li><a href="#">BxB Unisex Saloon</a></li>
+                        <li><a href="#">Laundry services</a></li>
+                        <li><a href="{% url 'about' %}">About</a></li>
+                        <li><a href="{% url 'services' %}">Services</a></li>
+                        <li><a href="{% url 'contact' %}">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- Header Section End -->
+
+        {% block content %}
+
+
+        {% endblock content %}
+
+        <!-- Footer Start -->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 footer-info">
+                            <h3>BELLXBRAVE</h3>
+                            <p>
+                                Bellxbrave epitomizes excellence in the investment landscape, offering a comprehensive array of services designed to unlock the full financial potential of its clients. With a commitment to personalized solutions, strategic planning, and expert guidance, Bellxbrave stands as a trusted partner in navigating the complexities of financial markets and achieving long-term financial success.
+                            </p>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>About Us</h4>
+                            <ul>
+                                <li><i class="ion-md-arrow-dropright"></i> <a href="{% url 'index' %}">Home</a></li>
+                                <li><i class="ion-md-arrow-dropright"></i> <a href="{% url 'about' %}">About us</a></li>
+                                <li><i class="ion-md-arrow-dropright"></i> <a href="{% url 'services' %}">Our services</a></li>
+                                <li><i class="ion-md-arrow-dropright"></i> <a href="{% url 'contact' %}">Contact</a></li>
+                               
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-contact">
+                            <h4>Contact Us</h4>
+                            <p>
+                                Lucas old road<br>
+                                Abraka, Delta<br>
+                                Nigeria <br>
+                                <strong>Phone 1:</strong> +234-814-706-2534<br>
+                                <strong>Phone 2:</strong> +234-708-696-9877<br>
+                                <strong>Email:</strong> info@bellxbrave.com<br>
+                            </p>
+
+                            <div class="social-links">
+                                <a href="#"><i class="ion-logo-twitter"></i></a>
+                                <a href="#"><i class="ion-logo-facebook"></i></a>
+                                <a href="#"><i class="ion-logo-linkedin"></i></a>
+                                <a href="#"><i class="ion-logo-instagram"></i></a>
+                                <a href="#"><i class="ion-logo-googleplus"></i></a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="copyright">
+                    &copy; Copyright <a href="https://www.cybria.tech">Cybria.Tech</a>. All Rights Reserved<br>
+					Template By <a href="https://htmlcodex.com">HTML Codex</a>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+
+        <a href="#" class="back-to-top"><i class="ion-md-arrow-dropup"></i></a>
+
+        <!-- Vendor JS Files -->
+        <script src="{% static 'bravempire/vendor/jquery/jquery.min.js' %}"></script>
+        <script src="{% static 'bravempire/vendor/jquery/jquery-migrate.min.js' %}"></script>
+        <script src="{% static 'bravempire/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static 'bravempire/vendor/easing/easing.min.js' %}"></script>
+        <script src="{% static 'bravempire/vendor/superfish/hoverIntent.js' %}"></script>
+        <script src="{% static 'bravempire/vendor/superfish/superfish.min.js' %}"></script>
+        <script src="{% static 'bravempire/vendor/waypoints/waypoints.min.js' %}"></script>
+        <script src="{% static 'bravempire/vendor/touchSwipe/jquery.touchSwipe.min.js' %}"></script>
+        <script src="{% static 'bravempire/vendor/counterup/counterup.min.js' %}"></script>
+        <script src="{% static 'bravempire/vendor/owlcarousel/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'bravempire/vendor/isotope/isotope.pkgd.min.js' %}"></script>
+        <script src="{% static 'bravempire/vendor/lightbox/js/lightbox.min.js' %}"></script>
+
+        <!-- Main Javascript File -->
+        <script src="{% static 'bravempire/js/main.js' %}"></script>
+
+    </body>
+</html>
+
+

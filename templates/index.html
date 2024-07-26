@@ -1,0 +1,534 @@
+{% extends 'bravempire/layout.html' %}   
+{% load static%}  
+
+{% block title %} BellXBrave Investment Capital{% endblock %}
+        
+        {% block content %}
+        <!-- Slider Section Start-->
+        <section class="slider">
+            <div class="slider-container">
+                <div id="carousel" class="carousel  slide carousel-fade" data-ride="carousel">
+
+                    <ol class="carousel-indicators"></ol>
+
+                    <div class="carousel-inner" role="listbox">
+
+                        <div class="carousel-item active">
+                            <div class="carousel-background"><img src="{% static 'bravempire/img/slider-1.jpg' %}" alt=""></div>
+                            <div class="carousel-container">
+                                <div class="carousel-content">
+                                    <h2>Business Development</h2>
+                                    <p>
+                                        At BellXBrave.com we build on ideas, bring them to live and improve what can possibily help humanity.
+                                    </p>
+                                    <a href="https://htmlcodex.com" class="btn-get-started">Get Started</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="carousel-background"><img src="{% static 'bravempire/img/slider-2.jpg' %}" alt=""></div>
+                            <div class="carousel-container">
+                                <div class="carousel-content">
+                                    <h2>Real Estate Agents</h2>
+                                    <p>
+                                        BellXBrave.com is not just an agent, we provide you a platform to sell and buy anywhere you want to live. This is our focus, this is what you want, this why we are here
+                                    </p>
+                                    <a href="https://htmlcodex.com" class="btn-get-started">Get Started</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="carousel-background"><img src="{% static 'bravempire/img/slider-3.jpg' %}" alt=""></div>
+                            <div class="carousel-container">
+                                <div class="carousel-content">
+                                    <h2>Ecommerce</h2>
+                                    <p>
+                                        From providing you our services to getting any product you want, we are here to make to provide you with class and beauty.
+                                    </p>
+                                    <a href="https://htmlcodex.com" class="btn-get-started">Get Started</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon ion-md-arrow-back" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+
+                    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon ion-md-arrow-forward" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+        <!-- Slider Section End-->
+
+        <!-- About Us Section Start-->
+        <section class="about">
+            <div class="container">
+                <header class="section-header">
+                    <h3>About Us</h3>
+                    <p>
+                       At BELLXBRAVE, we are concerned with the analytical preparation of potential growth opportunities as well as the subsequent support and monitoring to implement business ideas and like a child, help it grow with strategic, analytical decision within senior management    .                    </p>
+                </header>
+
+                <div class="row align-items-center about-row">
+                    <div class="col-md-6">
+                        <img src="https://img.freepik.com/premium-photo/african-american-boss-negotiating-discussing-contract-details-with-company-corporate-client_709984-9084.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699315200&semt=ais" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="title"><a href="{% url 'index' %}"> Welcome to BellXBrave.com </a></h2>
+                        <p>
+                           BELLXBRAVE is an Capital investment company, investing money in a business with the goal of generating future profits. It is a long-term investment that is made with the expectation of generating a return over a period of time. This long-term investment can be made in various forms, such as buying assets, upgrading technology, expanding production, or building new infrastructure.
+                        </p>
+                        
+                    </div>
+                </div>
+
+                <div class="row about-cols">
+                    <div class="col-md-4">
+                        <div class="about-col">
+                            <div class="img">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOtLz4WRXMjiBkZVJfSIAfqHqE9BhtGdHgvGuiM0rKN9qGnO5c50k437cD4aS6HsDQ_rw&usqp=CAU" alt="" class="img-fluid">
+                                <div class="icon"><i class="ion-ios-disc"></i></div>
+                            </div>
+                            <h2 class="title"><a href=>Our Mission</a></h2>
+                            <p>
+                                Dedicated to serving you at all our offices with best quality products, To provide high-quality, affordable goods and services.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="about-col">
+                            <div class="img">
+                                <img src="{% static 'bravempire/img/about-vision.jpg' %}" alt="" class="img-fluid">
+                                <div class="icon"><i class="ion-ios-eye"></i></div>
+                            </div>
+                            <h2 class="title"><a href=>Our Vision</a></h2>
+                            <p>
+                                All people in the world should have access to the best quality of services without discrimination.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="about-col">
+                            <div class="img">
+                                <img src="data:image/jpeg;base64,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" alt="" class="img-fluid">
+                                <div class="icon"><i class="ion-ios-options"></i></div>
+                            </div>
+                            <h2 class="title"><a href="#">Our Objective</a></h2>
+                            <p>
+                                Conservation, personal style, sustainability, quality of materials and affordability.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Us Section End -->
+
+        <!-- Services Section Start -->
+        <section id="services" class="services">
+            <div class="container">
+                <header class="section-header">
+                    <h3>Services</h3>
+                    <p>
+                        Bellxbrave stands at the forefront of the financial industry, providing a range of tailored services to empower individuals, businesses, and institutions in achieving their financial aspirations. As a leading investment firm, Bellxbrave excels in leveraging its expertise to deliver personalized solutions that align with clients' unique financial goals
+                    </p>
+                </header>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="single-service">
+                            <i class="fa fa-users" aria-hidden="true"></i>
+                            <h4><a href="">Laundry services</a></h4>
+                            <p>To provide efficient and reliable laundry services, ensuring customer satisfaction through prompt and high-quality cleaning, while incorporating eco-friendly practices to minimize environmental impact.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="single-service">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                            <h4><a href="">Real Estate</a></h4>
+                            <p>To facilitate clients in finding their ideal properties by offering a diverse portfolio of real estate solutions, personalized services, and expert advice, with a commitment to transparency, integrity, and maximizing value for our clients.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="single-service">
+                            <i class="fa fa-female" aria-hidden="true"></i>
+                            <h4><a href="">Best Fashion collection</a></h4>
+                            <p>To curate a stylish and cohesive fashion collection for couples, blending contemporary trends with timeless designs. Our goal is to provide couples with a diverse range of high-quality, coordinated fashion options that reflect their individual styles while fostering a sense of unity and shared expression.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="single-service">
+                            <i class="fa fa-scissors" aria-hidden="true"></i>
+                            <h4><a href="">Unisex Saloon</a></h4>
+                            <p>To provide a welcoming and inclusive space where clients can experience top-notch beauty and grooming services. Our goal is to deliver personalized, trend-setting styles while prioritizing client comfort and satisfaction.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="single-service">
+                            <i class="fa fa-building" aria-hidden="true"></i>
+                            <h4><a href="">Home Cleaning Services</a></h4>
+                            <p>To offer convenient and professional home services that cater to the diverse needs of our clients, ensuring a seamless experience with skilled professionals. Our aim is to bring comfort and quality services to our customers' doorsteps while maintaining the highest standards of safety and hygiene.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="single-service">
+                            <i class="fa fa-plug" aria-hidden="true"></i>
+                            <h4><a href="">Get quality Hairs & Hair products</a></h4>
+                            <p>To create and offer a premium line of hair care products that cater to diverse hair types and preferences. Our objective is to enhance the beauty and health of hair while promoting sustainability and cruelty-free practices.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="single-service">
+                            <i class="fa fa-motorcycle" aria-hidden="true"></i>
+                            <h4><a href="">Logistics</a></h4>
+                            <p>To streamline the delivery process, providing swift and dependable services to meet the diverse needs of our customers. Our goal is to ensure timely and secure deliveries, leveraging technology and a robust logistics network.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services Section End -->
+
+        <!-- Call To Action Start -->
+        <section class="call-to-action">
+            <div class="container text-center">
+                <header class="section-header">
+                    <h3>Call to Action</h3>
+                    <p>
+                        We are avaliable 24/7, whenever you need our services, give us a call, reach us via email, whatsapp  or any other social media platform. 
+                    </p>
+                </header>
+                <a class="cta-btn" href="#">Call To Action</a>
+            </div>
+        </section>
+        <!-- Call To Action End -->
+
+        
+        
+        <!-- Skills Section Start-->
+        <section class="skills">
+            <div class="container">
+                <header class="section-header">
+                    <h3>Our Investment Portfolio</h3>
+                    <p>
+                        BELLXBRAVE has invested in various industries and domains. Below shows areas of BellXBrave investment as we provide the best services
+                    </p>
+                </header>
+
+                <div class="skills-content">
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                            <span class="skill">Business development <i class="val">100%</i></span>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                            <span class="skill">Real Estate <i class="val">90%</i></span>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                            <span class="skill">Transportation <i class="val">80%</i></span>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                            <span class="skill">Fashion and Design <i class="val">80%</i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Skills Section End-->
+
+        <!-- Portfolio Section Start -->
+        <section class="portfolio">
+            <div class="container">
+
+                <header class="section-header">
+                    <h3 class="section-title">Our Portfolio</h3>
+                </header>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul id="portfolio-flters">
+                            <li data-filter="*" class="filter-active">All</li>
+                            <li data-filter=".real-estate">Real Estate</li>
+                            <li data-filter=".hairs">Hairs and Hair products</li>
+                            <li data-filter=".laundry">Laundry/Cleaning Service</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row portfolio-container">
+                    <div class="col-lg-4 col-md-6 portfolio-item real-estate">
+                        <div class="portfolio-wrap">
+                            <figure>
+                                <img src="https://fitsmallbusiness.com/wp-content/uploads/2022/04/FeatureImage_how_to_become_a_luxury_real_estate_agent.jpg" class="img-fluid" alt="Portfolio">
+                                <a href="https://fitsmallbusiness.com/wp-content/uploads/2022/04/FeatureImage_how_to_become_a_luxury_real_estate_agent.jpg" data-lightbox="portfolio" data-title="Lorem ipsum dolor" class="link-preview" title="Preview"><i class="ion-md-eye"></i></a>
+                                <a href="" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                            </figure>
+
+                            <div class="portfolio-info">
+                                <h4>Real Estate</h4>
+                                <p>Beautiful Homes</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item hairs">
+                        <div class="portfolio-wrap">
+                            <figure>
+                                <img src="data:image/jpeg;base64,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" class="img-fluid" alt="Portfolio">
+                                <a href="data:image/jpeg;base64,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" class="link-preview" data-lightbox="portfolio" data-title="Nulla ullamcorper pharetra" title="Preview"><i class="ion-md-eye"></i></a>
+                                <a href="" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                            </figure>
+
+                            <div class="portfolio-info">
+                                <h4>Hairs and Hair care products</h4>
+                                <p>BellXBrave Hairs</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item laundry">
+                        <div class="portfolio-wrap">
+                            <figure>
+                                <img src="https://img1.wsimg.com/isteam/ip/c7619b40-7a57-4b09-a544-c4cda5e054fd/19b7966d307b2a9d133d748c88b0ac99.jpg" class="img-fluid" alt="Portfolio">
+                                <a href="https://img1.wsimg.com/isteam/ip/c7619b40-7a57-4b09-a544-c4cda5e054fd/19b7966d307b2a9d133d748c88b0ac99.jpg" class="link-preview" data-lightbox="portfolio" data-title="Laundry" title="Preview"><i class="ion-md-eye"></i></a>
+                                <a href="" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                            </figure>
+
+                            <div class="portfolio-info">
+                                <h4>Laundry Service</h4>
+                                <p>Cleaning Service</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item laundry">
+                        <div class="portfolio-wrap">
+                            <figure>
+                                <img src="https://techsquadteam.com/assets/profile/blogimages/c453a6363f46baf76ac14a2bc4f6ac14.png" class="img-fluid" alt="Portfolio">
+                                <a href="https://techsquadteam.com/assets/profile/blogimages/c453a6363f46baf76ac14a2bc4f6ac14.png" data-lightbox="portfolio" data-title="Lorem ipsum dolor" class="link-preview" title="Preview"><i class="ion-md-eye"></i></a>
+                                <a href="" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                            </figure>
+
+                            <div class="portfolio-info">
+                                <h4>Home Cleaning Service</h4>
+                                <p>Cleaning Service</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item hairs">
+                        <div class="portfolio-wrap">
+                            <figure>
+                                <img src="https://menshaircuts.com/wp-content/uploads/2023/04/tp-black-men-haircuts.jpg" class="img-fluid" alt="Portfolio">
+                                <a href="https://menshaircuts.com/wp-content/uploads/2023/04/tp-black-men-haircuts.jpg" class="link-preview" data-lightbox="portfolio" data-title="Saloon" title="Preview"><i class="ion-md-eye"></i></a>
+                                <a href="" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                            </figure>
+
+                            <div class="portfolio-info">
+                                <h4>Unisex Saloon</h4>
+                                <p>Hair cut</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item hairs">
+                        <div class="portfolio-wrap">
+                            <figure>
+                                <img src="https://static.wixstatic.com/media/4b6d45_d763acaed7bd461fab3281a16f3d82cb~mv2.jpg/v1/fill/w_640,h_400,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/4b6d45_d763acaed7bd461fab3281a16f3d82cb~mv2.jpg" class="img-fluid" alt="Portfolio">
+                                <a href="https://static.wixstatic.com/media/4b6d45_d763acaed7bd461fab3281a16f3d82cb~mv2.jpg/v1/fill/w_640,h_400,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/4b6d45_d763acaed7bd461fab3281a16f3d82cb~mv2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Hairs" title="Preview"><i class="ion-md-eye"></i></a>
+                                <a href="" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                            </figure>
+
+                            <div class="portfolio-info">
+                                <h4>Hairs and Hair care products</h4>
+                                <p>BellXBrave Hairs</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Section End -->
+        
+        <!-- Team Section Start -->
+        <section class="team">
+            <div class="container">
+                <header class="section-header">
+                    <h3 class="section-title">Meet our team</h3>
+                    <p>
+                        To introduce the diverse and talented individuals comprising the Bellxbrave team, fostering transparency, trust, and connection with our clients. Our aim is to showcase the expertise, dedication, and collaborative spirit of our team members, creating a sense of familiarity and confidence in the people behind the brand.
+                    </p>
+                </header>
+                
+                <!--
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card card-block">
+                            <a href="#"><img alt="" class="team-img" src="{% static 'bravempire/img/team-1.jpg' %}">
+                                <div class="card-title-wrap">
+                                    <span class="card-title">John P. Haight</span> <span class="card-text">Web Designer</span>
+                                    <div class="social-nav">
+                                        <a href="#"><i class="ion-logo-twitter"></i></a>
+                                        <a href="#"><i class="ion-logo-facebook"></i></a>
+                                        <a href="#"><i class="ion-logo-linkedin"></i></a>
+                                        <a href="#"><i class="ion-logo-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card card-block">
+                            <a href="#"><img alt="" class="team-img" src="{% static 'bravempire/img/team-2.jpg' %}">
+                                <div class="card-title-wrap">
+                                    <span class="card-title">David R. Bernard</span> <span class="card-text">Web Developer</span>
+                                    <div class="social-nav">
+                                        <a href="#"><i class="ion-logo-twitter"></i></a>
+                                        <a href="#"><i class="ion-logo-facebook"></i></a>
+                                        <a href="#"><i class="ion-logo-linkedin"></i></a>
+                                        <a href="#"><i class="ion-logo-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card card-block">
+                            <a href="#"><img alt="" class="team-img" src="{% static 'bravempire/img/team-3.jpg' %}">
+                                <div class="card-title-wrap">
+                                    <span class="card-title">Dana A. Thomas</span> <span class="card-text">App Designer</span>
+                                    <div class="social-nav">
+                                        <a href="#"><i class="ion-logo-twitter"></i></a>
+                                        <a href="#"><i class="ion-logo-facebook"></i></a>
+                                        <a href="#"><i class="ion-logo-linkedin"></i></a>
+                                        <a href="#"><i class="ion-logo-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card card-block">
+                            <a href="#"><img alt="" class="team-img" src="{% static 'bravempire/img/team-4.jpg' %}">
+                                <div class="card-title-wrap">
+                                    <span class="card-title">Ava M. Proctor</span> <span class="card-text">App Developer</span>
+                                    <div class="social-nav">
+                                        <a href="#"><i class="ion-logo-twitter"></i></a>
+                                        <a href="#"><i class="ion-logo-facebook"></i></a>
+                                        <a href="#"><i class="ion-logo-linkedin"></i></a>
+                                        <a href="#"><i class="ion-logo-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                -->
+            </div>
+        </section>
+        <!-- Team Section End -->
+
+    
+
+        <!-- Contact Section Start -->
+        <section class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="section-title">Contact Us</h3>
+                    <p>
+                        To establish a seamless and responsive communication channel between Bellxbrave and its stakeholders. Our aim is to provide a user-friendly "Contact Us" experience, ensuring quick and effective resolution of inquiries, feedback, and concerns, while fostering positive relationships and enhancing customer satisfaction.
+                    </p>
+                </div>
+
+                <div class="row contact-info">
+                    <div class="col-md-4">
+                        <div class="contact-address">
+                            <i class="ion-md-pin"></i>
+                            <h3>Address</h3>
+                            <address>Lucas old road<br>
+                                Abraka, Delta<br>
+                                Nigeria <br></address>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="contact-phone">
+                            <i class="ion-md-call"></i>
+                            <h3>Phone Number</h3>
+                            <p><a href="tel:+234-814-706-2534"> <strong>Phone 1:</strong> +234-814-706-2534<br>
+                            <p><a href="tel:+234-708-696-9877">   <strong>Phone 2:</strong> +234-708-696-9877<br></a></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="contact-email">
+                            <i class="ion-md-mail"></i>
+                            <h3>Email</h3>
+                            <p><a href="mailto:info@bellxbrave.com">info@bellxbrave.com</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15877.874749161057!2d6.1016608!3d5.78927425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1041737b1cd61b7b%3A0x9c85060ca5f839aa!2sAbraka%20330105%2C%20Delta!5e0!3m2!1sen!2sng!4v1702482247858!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form">
+                            {% if submitted %}
+                             <h3 class="btn btn-success"> Form Was Successfully Submitted </h3>
+                             <p> Our team will reply as soon as possible</p>
+                           
+                           
+                            {% else %}
+                            <form method="post" class="contactForm" >
+                                {% csrf_token %}
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <input type="text" name="name" class="form-control" placeholder="Your Name" />
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="email"name='email' class="form-control" placeholder="Your Email" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="subject" class="form-control" placeholder="Subject" />
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                                </div>
+                                <div><button type="submit">Send Message</button></div>
+                            </form>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section End -->
+
+        {% endblock content %}        

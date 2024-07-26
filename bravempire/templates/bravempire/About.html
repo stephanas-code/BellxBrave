@@ -1,0 +1,89 @@
+{% extends 'bravempire/layout.html' %}   
+{% load static%} 
+
+{% block title %} About BellXBrave Empire {% endblock %}
+        
+        {% block content %}        
+        <!-- Banner Section Start-->
+        <section class="banner">
+            <div class="container">
+                <div class="col-lg-12">
+                    <div class="banner-nav">
+                        <div class="banner-box">
+                            <a href="{% url 'index' %}">Home </a>
+                            <a href="{% url 'about' %}">About</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Banner Section End-->
+
+         <!-- About Us Section Start-->
+         <section class="about">
+            <div class="container">
+                <header class="section-header">
+                    <h3>About Us</h3>
+                    <p>
+                       At BELLXBRAVE, we are concerned with the analytical preparation of potential growth opportunities as well as the subsequent support and monitoring to implement business ideas and like a child, help it grow with strategic, analytical decision within senior management    .                    </p>
+                </header>
+
+                <div class="row align-items-center about-row">
+                    <div class="col-md-6">
+                        <img src="https://img.freepik.com/premium-photo/african-american-boss-negotiating-discussing-contract-details-with-company-corporate-client_709984-9084.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699315200&semt=ais" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="title"><a href="{% url 'index' %}"> Welcome to BellXBrave.com </a></h2>
+                        <p>
+                           BELLXBRAVE is an Capital investment company, investing money in a business with the goal of generating future profits. It is a long-term investment that is made with the expectation of generating a return over a period of time. This long-term investment can be made in various forms, such as buying assets, upgrading technology, expanding production, or building new infrastructure.
+                        </p>
+                        
+                    </div>
+                </div>
+
+                <div class="row about-cols">
+                    <div class="col-md-4">
+                        <div class="about-col">
+                            <div class="img">
+                               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOtLz4WRXMjiBkZVJfSIAfqHqE9BhtGdHgvGuiM0rKN9qGnO5c50k437cD4aS6HsDQ_rw&usqp=CAU" alt="" class="img-fluid">
+                                <div class="icon"><i class="ion-ios-disc"></i></div>
+                            </div>
+                            <h2 class="title"><a href=>Our Mission</a></h2>
+                            <p>
+                                Dedicated to serving you at all our offices with best quality products, To provide high-quality, affordable goods and services.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="about-col">
+                            <div class="img">
+                                <img src="{% static 'bravempire/img/about-vision.jpg' %}" alt="" class="img-fluid">
+                                <div class="icon"><i class="ion-ios-eye"></i></div>
+                            </div>
+                            <h2 class="title"><a href=>Our Vision</a></h2>
+                            <p>
+                                All people in the world should have access to the best quality of services without discrimination.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="about-col">
+                            <div class="img">
+                                <img src="data:image/jpeg;base64,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" alt="" class="img-fluid">
+                                <div class="icon"><i class="ion-ios-options"></i></div>
+                            </div>
+                            <h2 class="title"><a href="#">Our Objective</a></h2>
+                            <p>
+                                Conservation, personal style, sustainability, quality of materials and affordability.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Us Section End -->
+
+      
+        {% endblock content %}
+
